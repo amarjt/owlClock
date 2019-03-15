@@ -5,52 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="./favicon-32x32.png">
     <title>owlClock</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        @font-face {
-            font-family: 'ShowcardGothic-Reg';
-            src: url(./fonts/ShowcardGothic-Reg.TTF);
-        }
-
-        body {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            /* background: linear-gradient(45deg, red 5%, skyblue 70%); */
-        }
-
-        svg {
-            width: 50vw;
-            height: auto;
-        }
-
-        .st0{fill:#30799B;}
-        .st1{fill:#FFFFFF;}
-        .st2{fill:#666666;}
-        .st3{fill:#282828;}
-        .st4{fill:#97C2B2;}
-        .st5{fill:#2C443A;}
-        .st6{fill:#9E1733;}
-        .st7{font-family:'ShowcardGothic-Reg';}
-        .st8{font-size:71.7697px;}
-        .st9{font-size:40.5973px;}
-        .st10{fill:url(#SVGID_1_);}
-        .st11{fill:url(#SVGID_2_);}
-        .st12{fill:#307A9D;}
-        .st13{font-size:62.4562px;}
-        .st14{font-size:102.5264px;}
-        .st15{display:none;}
-        .st16{display:inline;fill:#FFFFFF;}
-        .st17{font-size:16.6931px;}
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -218,7 +174,10 @@
                 rightCircle.style.fill = '#fff';
                 leftCircle.style.fill = '#30799B';
             } else {
-                i--;
+                if(i>0)
+                {
+                    i--;
+                }
                 rightEye.style.transform = 'translateX(' +
                     i + 2 + 'px)';
                 leftEye.style.transform = 'translateX(-' +
