@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'ShowcardGothic-Reg';
+    src: url(./fonts/ShowcardGothic-Reg.TTF);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button{
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+}
+
+svg {
+    width: 100vw;
+    height: auto;
+}
+
+#mobile {
+    visibility: hidden;
+}
+
+#desktop {
+    visibility: visible;
+}
+
+footer{
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+@media (max-width:768px) {
+    #mobile {
+        visibility: visible;
+    }
+
+    #desktop {
+        visibility: hidden;
+    }
+}
+
+.st1{display:inline;}
+.st2{opacity:0.77;clip-path:url(#SVGID_2_);}
+.st3{fill:url(#SVGID_3_);}
+.st4{opacity:0.77;clip-path:url(#SVGID_5_);}
+.st5{fill:url(#SVGID_6_);}
+.st6{clip-path:url(#SVGID_8_);}
+.st7{opacity:0.87;}
+.st8{fill:none;}
+.st9{fill:#FFFFFF;}
+.st10{opacity:0.17;fill:#FFFFFF;}
+.st11{opacity:0.37;fill:#FFFFFF;}
+.st12{opacity:0.57;fill:#FFFFFF;}
+.st13{opacity:0.77;}
+.st14{opacity:0.47;}
+.st15{opacity:0.67;fill:#FFFFFF;}
+.st16{fill:#FFFFFF;fill-opacity:0.97;}
+.st17{fill:#111111;}
+.st18{fill:#30799B;}
+.st19{fill:#666666;}
+.st20{fill:#282828;}
+.st21{fill:#97C2B2;}
+.st22{fill:#2C443A;}
+.st23{font-family:'ShowcardGothic-Reg';}
+.st24{font-size:27.1554px;}
+.st25{fill:#9E1733;}
+.st26{font-size:48.007px;}
+.st27{fill:url(#SVGID_9_);}
+.st28{fill:url(#SVGID_10_);}
+.st29{fill:#307A9D;}
+.st30{font-size:41.7771px;}
+.st31{font-size:68.5802px;}
