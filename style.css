@@ -59,6 +59,9 @@ footer{
     #desktop {
         visibility: hidden;
     }
+    footer {
+        color: #0F0094;
+    }
 }
 
 .st1{display:inline;}
